@@ -206,7 +206,7 @@ class Document(dict):
                 self[key] = other[key]
 
         if kwargs:
-            for key, value in kwargs.iteritems():
+            for key, value in kwargs.items():
                 self[key] = value
 
     def setdefault(self, key, default):
@@ -224,7 +224,7 @@ class Document(dict):
         into child Documents and DocumentLists converting those to dicts
         and lists respectively.
         """
-        return {key: unwrap(value) for key, value in self.iteritems()}
+        return {key: unwrap(value) for key, value in self.items()}
 
 
 class DocumentList(list):

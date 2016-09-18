@@ -2,7 +2,8 @@
 *.pyc
 build*.egg-info
 *.egg
-Mongothon.egg-info
+Mongothon3.egg-info
 build
 dist
 env
+.eggs

@@ -1,11 +1,11 @@
 language: python
 python:
-  - "2.7"
+  - "3.5"
 services:
   - mongodb
 # command to install dependencies
-install: "python setup.py install"
+install: "python3 setup.py install"
 # wait a little more cos mongo takes a while to start
 before_script: "sleep 5"
 # command to run tests
-script: "python setup.py nosetests"
+script: "python3 setup.py nosetests"
